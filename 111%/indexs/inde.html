@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css and js/style.css" />
+    <link rel="stylesheet" href="/css and js/swiper-bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="wrapper">
+          <div class="header__bottom">
+            <div class="wrapper">
+              <div class="header-bottom__row">
+                <nav class="navigation">
+                  <div class="logo_header">
+                    <img src="/img/logo2.png" alt="">
+                  </div>
+                  <ul class="menu">
+                    <li class="menu__list">
+                      <a href="./inde.html" class="menu__links">Главная</a>
+                    </li>
+                    <li class="menu__list">
+                      <a href="./uslugi.html" class="menu__links">Услуги</a>
+                      <ul class="js-sub-menu sub-menu">
+                        <li><a href="./uslugi.html" class="menu__links">Все</a></li>
+                        <li>
+                          <a href="#" class="menu__links">Акции</a>
+                        </li>
+                        <li>
+                          <a href="#" class="menu__links"
+                            >Рекомендуем</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__list">
+                      <a href="./video.html" class="menu__links">Видео</a>
+                    </li>
+                    <li class="menu__list">
+                      <a href="./fotogaleyry.html" class="menu__links">Фотогалерея</a>
+                    </li>
+                    </ul>
+                    <div class="toggle_btn">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="dropdown_menu">
+                      <li><a href="./inde.html">Главная</a></li>
+                        <li><a href="./uslugi.html">Услуги</a></li>
+                        <li><a href="services">Видео</a></li>
+                        <li><a href="contact">Фотогалерея</a></li>
+                    </div>
+                    <button type="submit" class="join" onclick="openLogin()">Войти</button>
+                    <div class="login" id="login">
+                      <button class="exit" onclick="closeLogin()">
+                        <ion-icon name="close-outline"></ion-icon>
+                      </button>
+                      <h2>Вход</h2>
+                      <p>Телефон</p>
+                      <input type="tel" name="" id="phone" value="+7 912" />
+                      <button class="btn_login">Вход</button>
+                      <div class="reg">
+                        <button class="btn1">Регистрация</button>
+                        <button class="btn2">Забыли пароль?</button>
+                      </div>
+                    </div>
+                    <button type="submit" class="join login_comment" onclick="openComment()">Комментарии</button>
+                    <div class="comment" id="comment">
+                      <button class="exit" onclick="closeComment()">
+                          <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <h2>Комментарии</h2>
+                        <p>Дмитрий (курьер) 21.01.2021</p>
+                        <textarea name="" id="text1" cols="30" rows="10"></textarea>
+                        <p>Аня (менеджер) 22.02.2021</p>
+                        <textarea name="" id="text2" cols="30" rows="10"></textarea>
+                        <textarea name="" id="text3" cols="30" rows="10"></textarea>
+                        <button type="submit" class="btn">Отправить</button>
+                      </div>
+                </nav>
+              </iv>
+            </div>
+          </div>
+      </div>
+    </header>
+    <main>
+    <section class="hero">
+      <div class="container">
+        <div class="text_hero">
+          <h1>ТСЖ “Перспектива”</h1>
+          <h2>
+            Дорогие посетители! Мы рады приветствовать вас на нашем сайте ТСЖ!
+          </h2>
+          <p>Что доступно для каждого посетителя сайта:</p>
+        </div>
+        <div class="cards_hero">
+          <div class="card_hero_1">
+            <div class="card_hero-item">
+              <img src="/img/calculator1.png" alt="" />
+              <h1>Показания счетчиков</h1>
+            </div>
+            <p>
+              Каждый месяц на нашем сайте мы принимаем показания счетчиков газа,
+              электричества.
+            </p>
+          </div>
+          <div class="card_hero_2">
+            <div class="card_hero-item">
+              <img src="/img/newspaper1.png" alt="" />
+              <h1>Показания счетчиков</h1>
+            </div>
+            <p>
+              Каждый месяц на нашем сайте мы принимаем показания счетчиков газа,
+              электричества.
+            </p>
+          </div>
+        </div>
+        <div class="cards_hero">
+          <div class="card_hero_1">
+            <div class="card_hero-item">
+              <img src="/img/file1.png" alt="" />
+              <h1>Показания счетчиков</h1>
+            </div>
+            <p>
+              Каждый месяц на нашем сайте мы принимаем показания счетчиков газа,
+              электричества.
+            </p>
+          </div>
+          <div class="card_hero_2">
+            <div class="card_hero-item">
+              <img src="/img/programmer1.png" alt="" />
+              <h1>Показания счетчиков</h1>
+            </div>
+            <div class="text_hero_p">
+              <p>
+              Каждый месяц на нашем сайте мы принимаем показания счетчиков газа,
+              электричества.
+            </p> 
+            </div>
+
+          </div>
+        </div>
+        <div class="input_menu">
+          <h1>Задайте свой вопрос прямо сейчас</h1>
+          <div class="input_box">
+            <div class="input_box_item">
+              <p>Введите имя</p>
+              <input type="text" placeholder="Введите имя" />
+            </div>
+            <div class="input_box_item">
+              <p>Введите имя</p>
+              <input type="text" placeholder="mail@.ru" />
+            </div>
+            <div class="input_box_item">
+              <p>Введите имя</p>
+              <input type="text" placeholder="Введите свой вопрос" />
+            </div>
+            <div class="btn_input">
+              <a href="#">Отправить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <video
+        src="/img/istockphoto-1271246872-640_adpp_is.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="text_video">
+        <p>Добро пожаловать в ТСЖ "ПЕРСПЕКТИВА"</p> 
+      </div>
+      
+      </div>
+    </section>
+    <section class="uslugi">
+      <div class="container">
+        <div class="title">
+          <h2>ТСЖ Услуги</h2>
+        </div>
+        <div class="content">
+          <div class="list">
+            <li data-color=".All">Все</li>
+            <li data-color=".featured">Популярные услуги</li>
+            <li data-color=".Special">Менее популярные услуги</li>
+            <li data-color=".Arrivals">Рекомендуемые</li>
+          </div>
+
+          <div class="box_flex">
+            <div class="box All Arrivals">
+              <div class="box_img">
+                <img src="/img/img_uslugi1.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Капитальный ремонт</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All Arrivals">
+              <div class="box_img">
+                <img src="/img/img_uslugi2.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Показания счетчиков</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All Arrivals">
+              <div class="box_img">
+                <img src="/img/img_uslugi3.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Домофон</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All Arrivals">
+              <div class="box_img">
+                <img src="/img/img_uslugi10.jpg" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Содержание прилегающей территории</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All featured">
+              <div class="box_img">
+                <img src="/img/img_uslugi4.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Сантехнические работы</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All featured">
+              <div class="box_img">
+                <img src="/img/img_uslugi5.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Монтажные работы</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All featured">
+              <div class="box_img">
+                <img src="/img/img_uslugi6.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Капитальный ремонт</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All featured">
+              <div class="box_img">
+                <img src="/img/img_uslugi11.jpg" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Обслуживание жилого фонда</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All Special">
+              <div class="box_img">
+                <img src="/img/img_uslugi7.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Ремонтные работы</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All Special">
+              <div class="box_img">
+                <img src="/img/img_uslugi8.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Технический осмотр</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All Special">
+              <div class="box_img">
+                <img src="/img/img_uslugi9.png" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Вывоз мусора</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box All Special">
+              <div class="box_img">
+                <img src="/img/img_uslugi13.jpg" alt="" />
+              </div>
+              <div class="text4">
+                <div class="text__top">
+                  <h3 class="name">Ведение бухгалтерского учета</h3>
+                  <p class="infa">
+                    Получите информацию о ценах (тарифах) на коммунальные и
+                    прочие услуги.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="otziv">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Davil Dell</h2>
+                <p class="description">Комфортный дом с ухоженной территорией, наземная и 2-х ярусная подземные парковки. Несколько детских площадок на территории. Территория огорожена на входе и въезде - охрана</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv2.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Aleksand Yasha</h2>
+                <p class="description">Очень красивый дом, архитектурно не теряет актуальности с годами. Фасады, подъезды - всё очень классно сделано. Отдельное спасибо ТСЖ, которые всё это поддерживают состоянии.</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv3.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Tomas Yaine</h2>
+                <p class="description">Одним словом, если у Вас возникла идея построить качественный и добротный дом, рекомендуем обращаться в эту компанию Спорт Строй Сервис! Всю работу сделали в срок</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Davil Dell</h2>
+                <p class="description">Комфортный дом с ухоженной территорией, наземная и 2-х ярусная подземные парковки. Несколько детских площадок на территории. Территория огорожена на входе и въезде - охрана</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv2.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Davil Dell</h2>
+                <p class="description">Очень красивый дом, архитектурно не теряет актуальности с годами. Фасады, подъезды - всё очень классно сделано. Отдельное спасибо ТСЖ, которые всё это поддерживают состоянии.</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv3.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Davil Dell</h2>
+                <p class="description">Одним словом, если у Вас возникла идея построить качественный и добротный дом, рекомендуем обращаться в эту компанию Спорт Строй Сервис! Всю работу сделали в срок</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Davil Dell</h2>
+                <p class="description">Комфортный дом с ухоженной территорией, наземная и 2-х ярусная подземные парковки. Несколько детских площадок на территории. Территория огорожена на входе и въезде - охрана</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="/img/img_otziv2.png" alt="" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Davil Dell</h2>
+                <p class="description">Очень красивый дом, архитектурно не теряет актуальности с годами. Фасады, подъезды - всё очень классно сделано. Отдельное спасибо ТСЖ, которые всё это поддерживают состоянии.</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="fotogallery">
+      <div class="container">
+        <div class="text_fotogalery">
+          <h1>Фоторепортаж проводимых работ</h1>
+          <p>
+            Здесь каждый посетитель сможет ознакомиться с фотографиями работ,
+            которые были выполнены в нашем ТСЖ
+          </p>
+        </div>
+        <div class="grid-wrapper">
+          <div class="foto_1">
+            <h1>Строительство детской площадки</h1>
+            <p>26 сентября 2019 года</p>
+          </div>
+          <div class="foto_2">
+            <h1>Открытие нового детского сада</h1>
+            <p>14 августа 2019 года</p>
+          </div>  
+          <div class="foto_3">
+            <h1>Ремонт дорог в 1 квартале 2019 года</h1>
+            <p>1 января 2019 года</p>
+          </div>
+          <div class="foto_4">
+            <h1>Благоустройство участка по адресу Ленина, 36</h1>
+            <p>25 марта 2019 года</p>
+          </div> 
+          <div class="foto_5">
+            <h1>Сбор мусора по адресу Калинина, 48</h1>
+            <p>9 апреля 2019 года</p>
+          </div>
+          <div class="foto_6">
+            <h1>Озеленение участка по адресу Маркса, 16</h1>
+            <p>4 июня 2019 года</p>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section class="za9vka container">
+      <div class="container">
+        <div class="menu_za9vka">
+          <div class="text_za9vka">
+            <h1>Напишите нам</h1>
+            <p>
+              Оставьте заявку на сайте, и мы свяжемся с Вами в ближайшее время
+            </p>
+            <div class="text_input_box">
+              <h2>Введите имя</h2>
+              <input type="text" placeholder="Введите имя" />
+              <hr />
+            </div>
+            <div class="text_input_box">
+              <h2>Введите email</h2>
+              <input type="text" placeholder="Введите email" />
+              <hr />
+            </div>
+            <div class="text_input_box">
+              <h2>Введите телефон</h2>
+              <input type="text" placeholder="xxx-xxx-xxx" />
+              <hr />
+            </div>
+            <div class="btn_za9vki">
+              <div class="btn_za9vka">
+                <a href="#">Отправить</a>
+              </div>
+            </div>
+          </div>
+          <div class="img_za9vka"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_text_all">
+          <div class="text_1">
+            <div class="img_footer">
+              <img src="/img/logo2.png" alt="" />
+            </div>
+            <div class="footer_text">
+              <p>
+                ТСЖ «ПЕРСПЕКТИВА», 123456, г.Москва, ул. Центральная 1, офис 1
+              </p>
+              <p>Политика конфиденциальности</p>
+            </div>
+          </div>
+          <div class="text_2">
+            <div class="text_contact">
+              <div class="text_phone">
+                <img src="/img/phone-solid 2.png" alt="" />
+                <p>8 800 333 22 33</p>
+              </div>
+              <p>Звонок по России бесплатный</p>
+              <div class="contact_a">
+                <a class="blue" href="#"><img src="/img/vk1.png" alt="" /></a>
+                <a class="green" href="#"
+                  ><img src="/img/whatsapp1.png" alt=""
+                /></a>
+                <a class="red" href="#"
+                  ><img src="/img/youtube1.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="/css and js/main.js"></script>
+  <script src="/css and js/filter_uslugi.js"></script>
+  <script src="/css and js/swiper-bundle.min.js"></script>
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
